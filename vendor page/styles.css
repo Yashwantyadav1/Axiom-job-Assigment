@@ -70,3 +70,78 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tabs {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .vendors {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .vendor-card {
+        width: 90%;
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .nav-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .tabs {
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .tab, .nav-button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .vendors {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .vendor-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .shop-button {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+}

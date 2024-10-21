@@ -82,3 +82,71 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%; /* Increase width for better display on tablets */
+        padding: 20px;
+    }
+
+    .input-container {
+        flex-direction: column; /* Stack input and label vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    label {
+        width: 100%; /* Full width for label */
+        text-align: left; /* Left align text */
+        margin-bottom: 5px; /* Add margin below label */
+    }
+
+    input {
+        width: 100%; /* Full width for input */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons */
+        margin: 5px 0; /* Margin for spacing */
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%; /* Adjust width for mobile */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px; /* Smaller font size for heading */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .input-container {
+        flex-direction: column; /* Stack input and label vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    label {
+        width: 100%; /* Full width for label */
+        margin-bottom: 5px; /* Add margin below label */
+    }
+
+    input {
+        width: 100%; /* Full width for input */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    button {
+        width: 100%; /* Full width for buttons */
+        margin: 5px 0; /* Margin for spacing */
+    }
+}

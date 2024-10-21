@@ -101,3 +101,69 @@ button:hover {
 .chart-btn:hover, .back-btn:hover {
     opacity: 0.8;
 }
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label, input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 48%;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label, input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .chart-btn, .back-btn {
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -82,3 +82,66 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+    .signup-container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label, input, select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    label {
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    .signup-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    label, input, select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    label {
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    button {
+        font-size: 14px;
+        width: 100%;
+    }
+}
