@@ -1,67 +1,101 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background: linear-gradient(to bottom, #d3d3d3, #f5f5f5);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #d3d3d3, #f5f5f5);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 70%;
+  max-width: 800px; /* Set a maximum width for larger screens */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #4682b4;
+}
+
+.item-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.item-button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+}
+
+.item-button:hover {
+  background-color: #4682b4;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
   .container {
-    width: 70%;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+      width: 90%; /* Adjust width for tablets */
+      padding: 15px; /* Adjust padding */
   }
-  
-  h2 {
-    margin-bottom: 20px;
-  }
-  
+
   .nav-bar {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+      flex-direction: column; /* Stack navigation buttons vertically */
+      align-items: center; /* Center align buttons */
   }
-  
-  .nav-button {
-    background-color: #1e90ff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .nav-button:hover {
-    background-color: #4682b4;
-  }
-  
+
   .item-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
+      flex-direction: column; /* Stack item buttons vertically */
+      align-items: center; /* Center align item buttons */
   }
-  
+
   .item-button {
-    background-color: #1e90ff;
-    color: white;
-    border: none;
-    padding: 50px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 20%;
+      width: 80%; /* Full width for item buttons */
+      padding: 20px; /* Smaller padding for item buttons */
+      margin-bottom: 10px; /* Space between buttons */
   }
-  
-  .item-button:hover {
-    background-color: #4682b4;
+}
+
+@media (max-width: 480px) {
+  .item-button {
+      padding: 15px; /* Smaller padding for mobile buttons */
   }
-  
+
+  h2 {
+      font-size: 20px; /* Smaller font size for mobile */
+  }
+}
