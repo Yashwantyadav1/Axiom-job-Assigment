@@ -15,6 +15,7 @@ body {
 
 .container {
     width: 80%;
+    max-width: 1200px; /* Set a maximum width for larger screens */
     background: linear-gradient(#e0e0e0, #c0c0c0);
     padding: 20px;
     border-radius: 8px;
@@ -84,4 +85,38 @@ nav {
 
 .delete-btn:hover {
     background-color: #ef4444;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width for tablets */
+    }
+
+    .main-content {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns on smaller screens */
+    }
+
+    .cell {
+        padding: 8px; /* Adjust padding */
+    }
+
+    .nav-button {
+        padding: 8px 16px; /* Adjust button padding for mobile */
+    }
+
+    header h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        grid-template-columns: 1fr; /* Change to single column for mobile phones */
+    }
+
+    .nav-button {
+        width: 100%; /* Full width for navigation buttons */
+        margin-bottom: 10px; /* Space between buttons */
+    }
 }
