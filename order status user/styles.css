@@ -28,7 +28,8 @@ body {
     margin-bottom: 30px;
 }
 
-.home, .logout {
+.home,
+.logout {
     border: 2px solid #3d74e7;
     border-radius: 8px;
     padding: 10px 20px;
@@ -39,7 +40,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.home:hover, .logout:hover {
+.home:hover,
+.logout:hover {
     background-color: #2b5ac9;
 }
 
@@ -92,4 +94,59 @@ body {
 .btn {
     min-width: 120px;
     text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Increase container width for tablets */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .header {
+        flex-direction: column; /* Stack header elements */
+        align-items: center; /* Center align */
+    }
+
+    .fields {
+        justify-content: center; /* Center fields on smaller screens */
+    }
+
+    .field {
+        min-width: 150px; /* Increase min width for better touch targets */
+        margin: 5px; /* Reduce margin between fields */
+        flex-basis: 45%; /* Allow fields to take up 45% width */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Increase container width for mobile */
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .header {
+        flex-direction: column; /* Stack header elements */
+    }
+
+    .home,
+    .logout {
+        width: 100%; /* Full width buttons for better accessibility */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+
+    .order-status {
+        width: 100%; /* Full width order status button */
+        padding: 12px; /* Reduce padding for mobile */
+    }
+
+    .fields {
+        flex-direction: column; /* Stack fields vertically */
+        align-items: center; /* Center align fields */
+    }
+
+    .field {
+        width: 100%; /* Full width fields for mobile */
+        margin-bottom: 10px; /* Space between fields */
+    }
 }

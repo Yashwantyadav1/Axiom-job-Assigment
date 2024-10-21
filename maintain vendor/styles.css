@@ -95,12 +95,53 @@ body {
     text-align: center;
 }
 
-.action:hover {
-    background-color: #e0ffe0;
-}
-
 /* Ensure buttons have consistent width */
 .action {
     width: 120px;
     align-self: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Increase container width for tablets */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .header {
+        flex-direction: column; /* Stack header elements */
+        align-items: center; /* Center align */
+    }
+
+    .home, .logout {
+        width: 100%; /* Full width buttons for better accessibility */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+
+    .sidebar {
+        padding: 15px; /* Reduce sidebar padding */
+    }
+
+    .section-title, .action {
+        width: 100%; /* Full width buttons for fields */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Increase container width for mobile */
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .header {
+        flex-direction: column; /* Stack header elements */
+    }
+
+    .home, .logout {
+        width: 100%; /* Full width buttons for better accessibility */
+    }
+
+    .section-title, .action {
+        padding: 10px; /* Reduce padding for mobile */
+    }
 }
