@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: linear-gradient(#d0d0d0, #a0a0a0);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    text-align: center;
+}
+
+h2 {
+    background-color: #77a9d9;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    background-color: #4c70b5;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+input {
+    background-color: #77a9d9;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+    color: black;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4c70b5;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #707070;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.chart-btn, .back-btn {
+    background-color: #4c70b5;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.chart-btn:hover, .back-btn:hover {
+    opacity: 0.8;
+}

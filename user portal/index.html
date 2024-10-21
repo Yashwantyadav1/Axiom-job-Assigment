@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>WELCOME USER</span>
+        </div>
+
+        <div class="dropdown-container">
+            <button class="dropdown-btn">Drop Down</button>
+            <div class="dropdown-content">
+                <a href="#">Catering</a>
+                <a href="#">Florist</a>
+                <a href="#">Decoration</a>
+                <a href="#">Lighting</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="menu-row">
+                <div class="dropdown-vendor">
+                    <button class="menu-btn vendor-btn">Vendor</button>
+                    <div class="vendor-dropdown-content">
+                        <a href="#">Vendor Option 1</a>
+                        <a href="#">Vendor Option 2</a>
+                        <a href="#">Vendor Option 3</a>
+                    </div>
+                </div>
+                
+                <button id="cart-btn" class="menu-btn">Cart</button>
+                <button id="guest-btn" class="menu-btn">Guest List</button>
+                <button id="order-btn" class="menu-btn">Order Status</button>
+            </div>
+            
+            <div class="logout-row">
+                <button id="logout-btn" class="menu-btn logout-btn">LogOut</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

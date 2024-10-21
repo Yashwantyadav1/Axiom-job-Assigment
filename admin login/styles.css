@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dad8d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: linear-gradient(#c1baba, #dcc4c4);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(88, 2, 2, 0.4);
+    width: 60vh;
+    text-align: center;
+}
+
+h2 {
+    background-color: #79b0e4;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    background-color: #4c70b5;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+input {
+    background-color: #77a9d9;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+    color: black;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 45%;
+}
+
+.cancel-btn {
+    background-color: #6c6c6c;
+    color: white;
+}
+
+.login-btn {
+    background-color: #6c6c6c;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+    font-size: 16px;
+}

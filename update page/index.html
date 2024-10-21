@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Update</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <button class="nav-button">Home</button>
+            <button id="logout-btn" class="nav-button right">LogOut</button>
+        </nav>
+        
+        <section class="status-section">
+            <div class="status-box">
+                <h2>Update</h2>
+                <div class="status-option">
+                    <input type="radio" id="received" name="status" value="Received">
+                    <label for="received">Received</label>
+                </div>
+                <div class="status-option">
+                    <input type="radio" id="ready" name="status" value="Ready for Shipping">
+                    <label for="ready">Ready for Shipping</label>
+                </div>
+                <div class="status-option">
+                    <input type="radio" id="delivery" name="status" value="Out for Delivery">
+                    <label for="delivery">Out for Delivery</label>
+                </div>
+            </div>
+            <button class="update-btn">Update</button>
+        </section>
+
+        <p id="status-message">State will Change</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

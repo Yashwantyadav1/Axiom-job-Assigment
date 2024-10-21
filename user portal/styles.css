@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    background-color: #4682B4;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.dropdown-container {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 15%;
+}
+
+.dropdown-btn {
+    background-color: #87CEEB;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #87CEEB;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #4682B4;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.logout-row {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu-btn {
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    width: 18%;
+    text-align: center;
+}
+
+.menu-btn:hover {
+    background-color: #4169E1;
+}
+
+.logout-btn {
+    background-color: #4682B4;
+    width: 30%;
+}
+
+.logout-btn:hover {
+    background-color: #FF6347;
+}
+
+/* Vendor dropdown */
+.dropdown-vendor {
+    position: relative;
+}
+
+.vendor-btn {
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.vendor-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #87CEEB;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    z-index: 1;
+}
+
+.vendor-dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.vendor-dropdown-content a:hover {
+    background-color: #4169E1;
+}

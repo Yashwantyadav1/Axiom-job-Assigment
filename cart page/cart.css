@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #d3d3d3, #a9a9a9);
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Navigation Buttons */
+.nav-button {
+    border: 2px solid green;
+    background-color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Shopping Cart Header */
+.cart-header h2 {
+    text-align: center;
+    background-color: #87CEFA;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Cart Table */
+.cart-table {
+    margin-top: 20px;
+}
+
+.cart-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.cart-column {
+    background-color: #4682B4;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 15%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.product-image {
+    background-color: #1E90FF;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Grand Total Section */
+.grand-total {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4682B4;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.delete-button {
+    border: 2px solid green;
+    background-color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Checkout Button */
+.checkout {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout-button {
+    border: 2px solid green;
+    background-color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Dropdown Quantity */
+.quantity-dropdown {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.action-button {
+    background-color: #4682B4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

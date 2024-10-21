@@ -1,0 +1,110 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b5b5b5; /* Gray background */
+}
+
+/* Container settings */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 50px auto;
+    background-color: #c7c7c7;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid green;
+    position: relative;
+}
+
+/* Header for Home and LogOut buttons */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.home, .logout {
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.home:hover, .logout:hover {
+    background-color: #e0ffe0;
+}
+
+/* Content area */
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sidebar styling */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section titles (Membership, User Management) */
+.section-title {
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.section-title:hover {
+    background-color: #e0ffe0;
+}
+
+/* Sub-options (Add, Update buttons) */
+.sub-options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.action {
+    margin: 5px 0;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.action:hover {
+    background-color: #e0ffe0;
+}
+
+/* Ensure buttons in sub-options have consistent width */
+.action {
+    width: 120px;
+    align-self: center;
+}

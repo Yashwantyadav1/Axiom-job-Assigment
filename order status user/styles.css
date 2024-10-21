@@ -1,0 +1,95 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b5b5b5;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #c7c7c7;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #3d74e7;
+}
+
+/* Header with Home and LogOut */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.home, .logout {
+    border: 2px solid #3d74e7;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #3d74e7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home:hover, .logout:hover {
+    background-color: #2b5ac9;
+}
+
+/* User Order Status */
+.status {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.order-status {
+    border: 2px solid #3d74e7;
+    border-radius: 8px;
+    padding: 15px 40px;
+    background-color: #3d74e7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-status:hover {
+    background-color: #2b5ac9;
+}
+
+/* Fields for Name, Email, Address, Status */
+.fields {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.field {
+    border: 2px solid #3d74e7;
+    border-radius: 8px;
+    padding: 10px 30px;
+    background-color: #3d74e7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.field:hover {
+    background-color: #2b5ac9;
+}
+
+/* Ensure all buttons are the same size */
+.btn {
+    min-width: 120px;
+    text-align: center;
+}

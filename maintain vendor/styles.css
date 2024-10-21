@@ -1,0 +1,106 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b5b5b5;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    margin: 50px auto;
+    background-color: #c7c7c7;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid green;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header for Home and LogOut buttons */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.home, .logout {
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.home:hover, .logout:hover {
+    background-color: #e0ffe0;
+}
+
+/* Sidebar for Membership and User Management */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Section buttons (Membership, User Management) */
+.section-title {
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.section-title:hover {
+    background-color: #e0ffe0;
+}
+
+/* Sub-options (Add, Update buttons) */
+.sub-options {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.action {
+    margin: 5px 0;
+    border: 2px solid green;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.action:hover {
+    background-color: #e0ffe0;
+}
+
+/* Ensure buttons have consistent width */
+.action {
+    width: 120px;
+    align-self: center;
+}

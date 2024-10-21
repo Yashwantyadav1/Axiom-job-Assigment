@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Event Management System</h2>
+        <form id="loginForm">
+            <div class="input-container">
+                <label for="userid">User Id</label>
+                <input type="text" id="userid" placeholder="Enter your user Id">
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="button-container">
+                <button type="button" class="cancel-btn" onclick="resetForm()">Cancel</button>
+                <button type="submit" class="login-btn">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

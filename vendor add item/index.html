@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Welcome 'Vendor Name'</span>
+            <div class="nav-buttons">
+                <button id="product-btn" class="nav-btn">Product Status</button>
+                <button id="request-btn" class="nav-btn">Request Item</button>
+                <button id="view-product-btn" class="nav-btn">View Product</button>
+                <button id="logout-btn" class="nav-btn">Log Out</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="form-section">
+                <div class="input-group">
+                    <label>Product Name</label>
+                    <input type="text" placeholder="Product Name">
+                </div>
+                <div class="input-group">
+                    <label>Product Price</label>
+                    <input type="text" placeholder="Product Price">
+                </div>
+                <div class="input-group">
+                    <label>Product Image</label>
+                    <input type="file">
+                </div>
+                <button class="submit-btn">Add The Product</button>
+            </div>
+
+            <div class="product-section">
+                <div class="product-header">
+                    <div class="header-item">Product Image</div>
+                    <div class="header-item">Product Name</div>
+                    <div class="header-item">Product Price</div>
+                    <div class="header-item">Action</div>
+                </div>
+                <div class="product-item">
+                    <div class="product-field">Image</div>
+                    <div class="product-field">Image Name</div>
+                    <div class="product-field">Rs/-</div>
+                    <div class="action-buttons">
+                        <button class="action-btn">Delete</button>
+                        <button class="action-btn">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

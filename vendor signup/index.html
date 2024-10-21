@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Event Management System</h2>
+        <form id="signupForm">
+            <div class="input-container">
+                <label for="name">Name</label>
+                <input type="text" id="signupUserId" placeholder="Enter your name">
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="signupPassword" placeholder="Enter your password">
+            </div>
+            <div class="input-container">
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="vendor">Vendor</option>
+                    <option value="organizer">User</option>
+                    <option value="participant">Admin</option>
+                </select>
+            </div>
+            <div class="button-container">
+                <button type="submit" id="signup" class="signup-btn">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
