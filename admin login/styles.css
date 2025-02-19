@@ -15,7 +15,7 @@ body {
 }
 
 .login-container {
-    background: linear-gradient(#c1baba, #dcc4c4);
+    background: linear-gradient(black);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 6px 10px rgba(88, 2, 2, 0.4);

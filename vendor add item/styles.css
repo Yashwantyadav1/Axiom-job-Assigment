@@ -25,7 +25,7 @@ body {
     background-color: #4682B4;
     padding: 15px;
     border-radius: 10px;
-    color: white;
+    color: rgba(255, 255, 255, 0.88);
     font-size: 18px;
 }
 
@@ -36,7 +36,7 @@ body {
 
 .nav-btn {
     background-color: #F0F8FF;
-    color: black;
+    color: #6f6f6f;
     border: 1px solid #87CEEB;
     padding: 10px 20px;
     border-radius: 5px;
@@ -75,11 +75,11 @@ body {
 .input-group input {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #4682B4;
+    border: 1px solid #045ab5;
 }
 
 .submit-btn {
-    background-color: #4682B4;
+    background-color: #045ab5;
     color: white;
     border: none;
     padding: 15px;
@@ -89,7 +89,7 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #4169E1;
+    background-color: #045ab5;
 }
 
 .product-section {
